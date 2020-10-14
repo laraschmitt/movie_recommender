@@ -131,3 +131,4 @@ dmypy.json
 
 # ignore course_material folders with its contents
 /course_material/*
+/data/*
