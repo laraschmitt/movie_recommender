@@ -1,0 +1,68 @@
+/* Using Spot Palette from https://mycolor.space/?hex=%2362003C&sub=1:
+- primary color: #62003C
+- secondary: #983D6B
+- third: #FFE4F8
+- fourth: #00C9B6 */
+
+#logo {
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #09576f;
+}
+
+.main-splash {
+  background-color: #09576f;
+  height: 100vh;
+  color: #FFE4F8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#highlight {
+  color: #e3ed21;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.merp {
+  margin-bottom: 20px;
+}
+
+.btn-danger {
+  background-color: #e3ed21;
+  border: 1px solid #e3ed21;
+}
+
+.recommendations {
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.pun-failure {
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #e3ed21;;
+}
+
+.pun-success {
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #e3ed21;;
+}
+
+.row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center
+}
