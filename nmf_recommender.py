@@ -1,5 +1,4 @@
 import pandas as pd
-from sklearn.decomposition import NMF
 import numpy as np
 from fuzzywuzzy import process
 import pickle
@@ -9,7 +8,7 @@ import pickle
 
 
 def get_NMF_recommendations(title1, title2, title3, rat1, rat2, rat3):
-    """ Function that outputs 3 movie recommendations based on the user input 
+    """ Function that outputs 3 movie recommendations based on the user input
     of 3 films that they have watched and the user's rating of these films"""
 
     # load df containing the movie names
@@ -59,9 +58,6 @@ def get_NMF_recommendations(title1, title2, title3, rat1, rat2, rat3):
     user_R = (np.dot(user_P, Q))[0]
 
     # zip into tuples of rating and film title
-    # remove the first three ones (the films that the user has already seen):
-    recs = list(zip(user_R, df.title.values))
-
     # remove the first three ones (the films that the user has already seen):
     rec = (list(zip(user_R, df.title.values)))[3:]
 
