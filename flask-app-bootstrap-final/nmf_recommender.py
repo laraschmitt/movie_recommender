@@ -1,18 +1,14 @@
 import pandas as pd
-from sklearn.decomposition import NMF
 import numpy as np
 from fuzzywuzzy import process
 import pickle
-
-# Example:
-# result = get_NMF_recommendations('Titanic', 'Toy Story', 'Star Wars', 3, 4, 5)
 
 model_path = './NMF_model.sav'
 df_path = './dev_ds_ratings_names_uniqueids.csv'
 
 
 def get_NMF_recommendations(user_input):
-    """ Function that outputs 3 movie recommendations based on the user input 
+    """ Function that outputs 3 movie recommendations based on the user input
     of 3 films that they have watched and the user's rating of these films"""
 
     # load df containing the movie names
@@ -31,7 +27,8 @@ def get_NMF_recommendations(user_input):
     # USER INPUT PROCESSING:
     print('fuzzy matching of user input started ...')
     choices = []
-    for title_fuzz in [user_input['movie1'], user_input['movie2'], user_input['movie3']]:
+    for title_fuzz in [user_input['movie1'], user_input['movie2'],
+                       user_input['movie3']]:
         selection = process.extractOne(title_fuzz, title_list)
         choices.append(selection[0])
 

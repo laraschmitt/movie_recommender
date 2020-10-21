@@ -1,7 +1,7 @@
 from nmf_recommender import get_NMF_recommendations
 
 
-def test_result_string():
+def test_nmf_model():
     """ Function to test whether the result is a list of strings"""
     recs = get_NMF_recommendations(
         'Titanic', 'Toy Story', 'Star Wars', 3, 4, 5)
