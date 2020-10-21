@@ -3,9 +3,6 @@ import numpy as np
 from fuzzywuzzy import process
 import pickle
 
-# Example:
-# result = get_NMF_recommendations('Titanic', 'Toy Story', 'Star Wars', 3, 4, 5)
-
 
 def get_NMF_recommendations(title1, title2, title3, rat1, rat2, rat3):
     """ Function that outputs 3 movie recommendations based on the user input
@@ -66,7 +63,3 @@ def get_NMF_recommendations(title1, title2, title3, rat1, rat2, rat3):
 
     # return only movie names of the tuples
     return [x[1] for x in sorted_top_3_rec]
-
-
-result = get_NMF_recommendations('Titanic', 'Toy Story', 'Star Wars', 3, 4, 5)
-print(result)
