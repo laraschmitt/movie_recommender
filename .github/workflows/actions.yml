@@ -6,7 +6,7 @@ on: [push] # specify the events that will trigger the action (pushes &| pull req
 jobs:
 
     # first job id: lint
-    lint and test:
+    lint_and_test:
 
        # specify the type of virtual machine to run the action on. 
         # e.g. (ubuntu-latest, macos-latest and windows-latest)
@@ -35,8 +35,8 @@ jobs:
                 pip install pytest-cov
                 if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-                # Finally, check whether the pushes meet the standards we require 
-                # on our project (e.g. lint the code with flake8 & test with pytest)
+            # Finally, check whether the pushes meet the standards we require 
+            # on our project (e.g. lint the code with flake8 & test with pytest)
             - name: Lint with flake8
               run: |
                 flake8 .
