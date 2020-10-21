@@ -5,38 +5,38 @@ on: [push] # specify the events that will trigger the action (pushes &| pull req
 # list the jobs to run
 jobs:
 
-	# first job id: lint
+    # first job id: lint
     lint and test:
 
-		# specify the type of virtual machine to run the action on. 
-		# e.g. (ubuntu-latest, macos-latest and windows-latest)
+       # specify the type of virtual machine to run the action on. 
+        # e.g. (ubuntu-latest, macos-latest and windows-latest)
         runs-on: ubuntu-latest
 
-		# specify the steps to take on the job.
+        # specify the steps to take on the job.
         steps:
-			# The first step is to use an existing action to checkout the code
-			# (This action lives in a public repo on GitHub)
+            # The first step is to use an existing action to checkout the code
+            # (This action lives in a public repo on GitHub)
             - uses: actions/checkout@v2
 
-			# We can also name steps and provide arguments to the actions we use. 
-			# Here, we are installing Python 3.8:
+            # We can also name steps and provide arguments to the actions we use. 
+            # Here, we are installing Python 3.8:
             - name: Set up Python
               uses: actions/setup-python@v2
               with:
                 python-version: '3.8'
 
-			# We can run any commands we want using the operating system's shell. 
-			# This installs the project dependencies using pip install
+            # We can run any commands we want using the operating system's shell. 
+            # This installs the project dependencies using pip install
             - name: Install dependencies
               run: |
                 python -m pip install --upgrade pip
-				pip install flake8 
-				pip install pytest
+                pip install flake8 
+                pip install pytest
                 pip install pytest-cov
-				if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+                if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-			# Finally, check whether the pushes meet the standards we require 
-			# on our project (e.g. lint the code with flake8 & test with pytest)
+                # Finally, check whether the pushes meet the standards we require 
+                # on our project (e.g. lint the code with flake8 & test with pytest)
             - name: Lint with flake8
               run: |
                 flake8 .
