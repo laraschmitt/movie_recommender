@@ -1,10 +1,11 @@
+from os import path, getcwd
 import pandas as pd
 import numpy as np
 from fuzzywuzzy import process
 import pickle
 
-model_path = './NMF_model.sav'
-df_path = './dev_ds_ratings_names_uniqueids.csv'
+model_path = path.join(getcwd(), 'NMF_model.sav')
+df_path = path.join(getcwd(), 'dev_ds_ratings_names_uniqueids.csv')
 
 
 def get_NMF_recommendations(user_input):

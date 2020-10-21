@@ -42,4 +42,5 @@ jobs:
                 flake8 .
             - name: Test with pytest
               run: |
+                cd flask-app-bootstrap
                 pytest
