@@ -1,6 +1,5 @@
 import pandas as pd
 from sklearn.decomposition import NMF
-import numpy as np
 import pickle
 
 # load cleaned up dataset

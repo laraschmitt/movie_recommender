@@ -1,6 +1,7 @@
 # script to deal with non unique movieIds for certain films
 # 1. replace the second occuring movieId for a film with the first occuring one
-# 2. left join the titles on the ratings df (some movies do not have a rating, drop these)
+# 2. left join the titles on the ratings df
+# (some movies do not have a rating, drop these)
 
 
 import pandas as pd
@@ -28,7 +29,7 @@ dup_id_list = sort_dup['movieId'].to_list()
 
 print('duplicates found')
 
-# put the valid ids and the second occuring ids in list and zip them into a dictionart
+# put the valid ids and the second 2nd ids in list and zip them into a dict
 every_valid_id = dup_id_list[::2]
 every_sec_id = dup_id_list[1::2]
 

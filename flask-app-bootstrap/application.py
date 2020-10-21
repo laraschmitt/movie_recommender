@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, flash
-from recommender import random_recommender
 from nmf_recommender import get_NMF_recommendations
 
 app = Flask(__name__)
