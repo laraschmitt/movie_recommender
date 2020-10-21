@@ -60,9 +60,6 @@ def get_NMF_recommendations(user_input):
 
     # zip into tuples of rating and film title
     # remove the first three ones (the films that the user has already seen):
-    recs = list(zip(user_R, df.title.values))
-
-    # remove the first three ones (the films that the user has already seen):
     rec = (list(zip(user_R, df.title.values)))[3:]
 
     # sort by rating
