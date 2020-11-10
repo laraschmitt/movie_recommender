@@ -132,3 +132,5 @@ dmypy.json
 # ignore course_material folders with its contents
 /course_material/*
 /data/*
+build_NMF_rec_function.ipynb
+train_NMF_model.ipynb
