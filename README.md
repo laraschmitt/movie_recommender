@@ -13,7 +13,7 @@ A Website to recommend movies based on user input. Non-negative Matrix Factoriza
 ## How to use:
 * Clone the repository 
 * install dependencies: `cd app && pip3 install -r requirements.txt`
-* run the app: `cd app && env FLASK_APP=application.py flask run`
+* run the app: `env FLASK_APP=application.py flask run`
 * open a browser on the specified location
 
 
