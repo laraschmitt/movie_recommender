@@ -15,7 +15,7 @@ A Website to recommend movies based on user input. Non-negative Matrix Factoriza
 
 
 
-## This repo includes::
+## This repo includes:
 * [Exploratory data analysis](https://github.com/laraschmitt/movie_recommender/blob/main/EDA/EDA_movie_lens_100k_complete.ipynb) and data wrangling (for the small movielens dataset) in jupyter notebook.
 * [Python script](https://github.com/laraschmitt/movie_recommender/blob/main/data_wrangling.py) to create cleaned up dataset.
 * [SQL script](https://github.com/laraschmitt/movie_recommender/blob/main/DB_setup/import_tables.sql) to load the cleaned up MovieLens data into a Postgres database. 
