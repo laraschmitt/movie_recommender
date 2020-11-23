@@ -1,11 +1,11 @@
 
-name: Linter and Test  # name the action
+name: Continuous Integration  # name the action
 on: [push] # specify the events that will trigger the action (pushes &| pull requests)
 
 # list the jobs to run
 jobs:
 
-    # first job id: lint
+    # first job id: Continuous Integration
     lint_and_test:
 
        # specify the type of virtual machine to run the action on. 
@@ -42,5 +42,5 @@ jobs:
                 flake8 .
             - name: Test with pytest
               run: |
-                cd flask-app-bootstrap
+                cd app
                 pytest

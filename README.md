@@ -1,3 +1,5 @@
+![Continuous Integration](https://github.com/laraschmitt/movie_recommender/workflows/Continuous%20Integration/badge.svg)
+
 # movie_recommender
 🎬 🍿unsupervised_learning
 
@@ -8,10 +10,10 @@ A Website to recommend movies based on user input. Non-negative Matrix Factoriza
 
 
 ## How to use:
-* Clone the repository
-* Install requirements: pip install -r requirements.txt
-* to run: source run_server.sh
-* then open a browser on the specified location
+* Clone the repository 
+* install dependencies: `cd app && pip3 install -r requirements.txt`
+* run the app: `cd app && env FLASK_APP=application.py flask run`
+* open a browser on the specified location
 
 
 
