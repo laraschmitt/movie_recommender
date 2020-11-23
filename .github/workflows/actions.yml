@@ -5,8 +5,8 @@ on: [push] # specify the events that will trigger the action (pushes &| pull req
 # list the jobs to run
 jobs:
 
-    # first job id: lint
-    lint_and_test:
+    # first job id: Continuous Integration
+    Continuous Integration:
 
        # specify the type of virtual machine to run the action on. 
         # e.g. (ubuntu-latest, macos-latest and windows-latest)
