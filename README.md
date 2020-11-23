@@ -8,7 +8,7 @@
 
 A Website to recommend movies based on user input. Non-negative Matrix Factorization returns movie recommendations based on three given movie titles.
 
-![example_image](browser_example.png)
+![example_image](browser_preview.png)
 
 ## How to use:
 * Clone the repository 
