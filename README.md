@@ -1,6 +1,6 @@
 ![Continuous Integration](https://github.com/laraschmitt/movie_recommender/workflows/Continuous%20Integration/badge.svg)
 
-# movie_recommender
+# Movie Recommender
 🎬 🍿unsupervised_learning
 
 
