@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash
+from flask import Flask, render_template, request
 from nmf_recommender import get_NMF_recommendations
 
 app = Flask(__name__)
