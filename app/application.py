@@ -21,17 +21,7 @@ def results():
     user_input = request.args
 
     movie_list = get_NMF_recommendations(user_input)
-
-    if user_input['pun'] == 'Yes':
-        message = "Great! You're gonna love these recommendations!"
-        status = "pun-success"
-    else:
-        message = "Wow, your life is boring. Try watching these films."
-        status = "pun-failure"
-
-    flash(message)
-
-    return render_template('results.html', movies=movie_list, status=status)
+    return render_template('results.html', movies=movie_list)
 
 
 if __name__ == '__main__':
